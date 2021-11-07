@@ -1,9 +1,11 @@
+import jssha from "jssha";
+
 export function getAuthorizationHeader() {
     const AppID = 'FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF';
     const AppKey = 'FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF';
     const GMTString = new Date().toGMTString();
-    
-    let ShaObj = new jsSHA('SHA-1', 'TEXT');
+
+    let ShaObj = new jssha('SHA-1', 'TEXT');
     ShaObj.setHMACKey(AppKey, 'TEXT');
     ShaObj.update('x-date: ' + GMTString);
     const HMAC = ShaObj.getHMAC('B64');
