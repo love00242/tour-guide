@@ -7,22 +7,24 @@
 
 <script>
 import HelloWorld from "@/components/HelloWorld.vue";
-import { apiTourScene } from "@/utils/api.js";
+// import { apiTourScene } from "@/utils/api.js";
+import * as api from "@/utils/api.js";
 export default {
   name: "Home",
   components: {
     HelloWorld,
   },
   methods: {
-    async getTourData() {
-      try {
-        const result = await apiTourScene("$top=30");
-        if(result.status === 200) {
-          console.log("success");
-        }
-      } catch (err) {
-        console.error(err);
+    getTourData() {
+      const parm = {
+        // $top:30,
+        $filter: "contains(Name,'台北')"
       }
+      api.getApi(parm).then(res=> {
+        if(res?.status === 200) {
+          console.log(res,"success");
+        }
+      })
     }
   },
   mounted() {

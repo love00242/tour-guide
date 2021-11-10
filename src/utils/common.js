@@ -1,8 +1,8 @@
 import jssha from "jssha";
 
 export function getAuthorizationHeader() {
-    const AppID = 'FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF';
-    const AppKey = 'FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF';
+    const AppID = '0d068c678f4f4154bfa8c2a45628e50c';
+    const AppKey = 'FbfZCusU3lw2S1jLnj9jxbO5P3w';
     const GMTString = new Date().toGMTString();
 
     let ShaObj = new jssha('SHA-1', 'TEXT');
