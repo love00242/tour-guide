@@ -1,19 +1,15 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
 // import { apiTourScene } from "@/utils/api.js";
 import * as api from "@/utils/api.js";
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
+  components: {},
   methods: {
     getTourData() {
       const parm = {
