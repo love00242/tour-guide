@@ -1,0 +1,45 @@
+.header {
+    height: 68px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    ul {
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        margin-left: 40px;
+        li {
+            margin: 0 20px;
+            font-size: 15px;
+            font-weight: 550;
+        }
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F5F5F5;
+        border: 3px solid #F0F0F0;
+        border-radius: 34px;
+        min-width: 195px;
+        overflow: hidden;
+        padding: 0 5px;
+        input {
+            color: #545454;
+            line-height: 19px;
+            border: none;
+            padding: 5px 0;
+            background: #F5F5F5;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: #545454;
+            }
+        }
+        img {
+            width: 19px;
+            height: 19px;
+        }
+    }
+}
