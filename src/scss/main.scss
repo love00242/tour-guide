@@ -1,4 +1,5 @@
 @import './base/reset.scss';
+@import './base/base.scss';
 
 @import './abstracts/mixin.scss';
 @import './abstracts/variables.scss';
@@ -7,5 +8,6 @@
 @import './layout/header.scss';
 
 @import './component/button.scss';
+@import './component/searchbar.scss';
 
 @import './pages/idx.scss';

@@ -6,12 +6,4 @@
 
 <style lang="scss">
 @import "./scss/main.scss";
-#app {
-  font-family: "Noto Sans TC", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #000;
-  overflow:hidden;
-}
 </style>

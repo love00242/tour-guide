@@ -1,8 +1,8 @@
 <template>
     <div class="header">
-        <img src="/images/logo1-1.png" alt="">
+        <img src="/images/logo1.png" alt="">
         <ul>
-            <li>旅遊景點</li>
+            <li>特色活動</li>
             <li>美食饗宴</li>
             <li>精選住宿</li>
         </ul>
@@ -21,6 +21,3 @@ export default {
     methods: {},
 }
 </script>
-
-<style lang="sass">
-</style>
