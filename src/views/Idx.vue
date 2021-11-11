@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <div class="idx">
         <Header />
-        <IdxSearch />
         <IdxBanner />
+        <IdxSearch />
         <Footer />
     </div>
 </template>
