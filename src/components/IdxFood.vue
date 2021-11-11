@@ -1,5 +1,7 @@
 <template>
-    <div>idx attraction</div>
+    <div>
+        Food
+    </div>
 </template>
 
 <script>
@@ -10,6 +12,3 @@ export default {
     methods: {},
 }
 </script>
-
-<style lang="sass">
-</style>
