@@ -30,6 +30,7 @@ export default {
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     margin-right: 30px;
+    background: #fff;
     &-img { //
         width: 290px;
         height: 243px;
@@ -39,7 +40,7 @@ export default {
         line-height: 23px;
         letter-spacing: 0.03em;
         font-weight: 550;
-        padding: 10px 10px 5px;
+        padding: 10px 10px 0;
     }
     small {
         color:#A8A8A8;
@@ -50,7 +51,7 @@ export default {
     &-text {
         display: flex;
         align-items: center;
-        padding: 10px;
+        padding: 10px 10px 15px;
         div {
             display: flex;
             width: 84%;

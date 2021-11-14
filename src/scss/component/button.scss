@@ -9,7 +9,7 @@
 @mixin btn_more {
     background: linear-gradient(167.01deg, #78E389 -18.85%, #1EB893 92.39%);
     border-radius: 53px;
-    max-width: 137px;
+    width: 137px;
     height: 45px;
     color: #fff;
     font-weight: 550;
@@ -34,4 +34,26 @@
         background: #fff;
         border-radius: 50%;
     }
+}
+
+//左右切換
+@mixin btn_pre {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.63) url('/images/slider-btn.png') no-repeat center;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+    background-size: 30%;
+}
+
+@mixin btn_next {
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(120.85deg, #5FE774 -28.71%, #1EB893 68.7%) url('/images/slider-btn-h.png') no-repeat center;
+    content: '';
+    background-size: 20%;
+    position: absolute;
 }
